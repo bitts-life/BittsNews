@@ -1,7 +1,9 @@
 package com.bittslife.bittsnews.ui.adapter
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.RecyclerView
 import com.bittslife.bittsnews.data.model.Article
 import com.bittslife.bittsnews.databinding.NewsItemLayoutBinding
@@ -21,9 +23,9 @@ class NewsAdapter(
                 .load(article.image_url)
                 .into(binding.imageViewBanner)
             itemView.setOnClickListener {
-//                val builder = CustomTabsIntent.Builder()
-//                val customTabsIntent = builder.build()
-//                customTabsIntent.launchUrl(it.context, Uri.parse(article.))
+                val builder = CustomTabsIntent.Builder()
+                val customTabsIntent = builder.build()
+                customTabsIntent.launchUrl(it.context, Uri.parse(article.link))
             }
         }
     }

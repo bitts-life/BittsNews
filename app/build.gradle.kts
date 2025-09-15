@@ -58,5 +58,6 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.dagger)
     ksp(libs.dagger.compiler)
+    implementation(libs.browser)
 
 }
