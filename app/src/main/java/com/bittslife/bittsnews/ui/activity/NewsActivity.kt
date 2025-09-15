@@ -67,6 +67,7 @@ class NewsActivity : AppCompatActivity() {
                         is UiState.Error -> {
                             //Handle Error
                             binding.progressBar.visibility = View.GONE
+                            binding.textError.text = it.message
                             Toast.makeText(this@NewsActivity, it.message, Toast.LENGTH_LONG)
                                 .show()
                         }
