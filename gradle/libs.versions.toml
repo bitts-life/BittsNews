@@ -14,10 +14,9 @@ constraintlayout = "2.2.1"
 recyclerview = "1.4.0"
 glide = "4.16.0"
 retrofit = "3.0.0"
-lifecycleExtensions = "1.1.1"
 lifecycleViewmodelKtx = "2.9.2"
-lifecycleRuntimeKtx = "2.9.2"
 dagger = "2.57"
+browser = "1.8.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -33,11 +32,10 @@ recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "r
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
-lifecycle-extensions = { module = "android.arch.lifecycle:extensions", version.ref = "lifecycleExtensions" }
 lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+browser = { module = "androidx.browser:browser", version.ref = "browser" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
